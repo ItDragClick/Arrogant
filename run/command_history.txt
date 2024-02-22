@@ -1,0 +1,21 @@
+/difficulty normal
+/difficulty peaceful
+/gamerule randomTickSpeed 1000
+/gamerule randomTickSpeed 2000
+/gamerule randomTickSpeed 0
+/tag @s add lagging
+/execute as @a[tag=lagging,dy=3] at @s run tp ~ ~ ~-1
+/effect give @s speed infinite 2 true
+/effect clear
+/effect give @s speed infinite 0 true
+/tag @s remove lagging
+/tag @s add lagging
+/effect give @s speed infinite 1 true
+/tag @s remove lagging
+/effect give @s speed infinite 2 true
+/effect give @s speed infinite 3 true
+/tag @s add lagging
+/effect give @s speed infinite 5 true
+/effect give @s speed infinite 8 true
+/tag @s remove lagging
+/effect clear

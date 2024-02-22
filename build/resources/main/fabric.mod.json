@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "modid",
+	"version": "0.8.1-Beta",
+	"name": "Arrogant",
+	"description": "This just a normal mod. :)",
+	"authors": [
+		"ItDragClick"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/modid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.itdragclick.Mod"
+		],
+		"client": [
+          "com.itdragclick.ModClient"
+		]
+	},
+	"mixins": [
+		"modid.mixins.json",
+		{
+			"config": "modid.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

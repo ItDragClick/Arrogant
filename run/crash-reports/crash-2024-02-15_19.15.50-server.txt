@@ -1,0 +1,169 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 2024-02-15 19:15:50
+Description: Exception ticking world
+
+java.util.ConcurrentModificationException
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1229)
+	at net.minecraft.client.sound.SoundLoader.loadStatic(SoundLoader.java:29)
+	at net.minecraft.client.sound.SoundSystem.play(SoundSystem.java:459)
+	at net.minecraft.client.sound.SoundManager.play(SoundManager.java:253)
+	at net.minecraft.client.world.ClientWorld.playSound(ClientWorld.java:498)
+	at net.minecraft.client.world.ClientWorld.playSound(ClientWorld.java:486)
+	at net.minecraft.client.network.ClientPlayerEntity.playSound(ClientPlayerEntity.java:516)
+	at com.itdragclick.ModClient.lambda$onInitializeClient$0(ModClient.java:46)
+	at net.fabricmc.fabric.api.event.world.WorldTickCallback.lambda$static$0(WorldTickCallback.java:36)
+	at net.fabricmc.fabric.impl.event.lifecycle.v0.LegacyEventInvokers.lambda$onInitialize$3(LegacyEventInvokers.java:35)
+	at net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents.lambda$static$6(ServerTickEvents.java:63)
+	at net.minecraft.server.world.ServerWorld.handler$zkh000$fabric-lifecycle-events-v1$endWorldTick(ServerWorld.java:2274)
+	at net.minecraft.server.world.ServerWorld.tick(ServerWorld.java:410)
+	at net.minecraft.server.MinecraftServer.tickWorlds(MinecraftServer.java:948)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:845)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:110)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:683)
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:270)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1229)
+	at net.minecraft.client.sound.SoundLoader.loadStatic(SoundLoader.java:29)
+	at net.minecraft.client.sound.SoundSystem.play(SoundSystem.java:459)
+	at net.minecraft.client.sound.SoundManager.play(SoundManager.java:253)
+	at net.minecraft.client.world.ClientWorld.playSound(ClientWorld.java:498)
+	at net.minecraft.client.world.ClientWorld.playSound(ClientWorld.java:486)
+	at net.minecraft.client.network.ClientPlayerEntity.playSound(ClientPlayerEntity.java:516)
+	at com.itdragclick.ModClient.lambda$onInitializeClient$0(ModClient.java:46)
+	at net.fabricmc.fabric.api.event.world.WorldTickCallback.lambda$static$0(WorldTickCallback.java:36)
+	at net.fabricmc.fabric.impl.event.lifecycle.v0.LegacyEventInvokers.lambda$onInitialize$3(LegacyEventInvokers.java:35)
+	at net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents.lambda$static$6(ServerTickEvents.java:63)
+	at net.minecraft.server.world.ServerWorld.handler$zkh000$fabric-lifecycle-events-v1$endWorldTick(ServerWorld.java:2274)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayerEntity['Player479'/1, l='ServerLevel[Test World]', x=-30.70, y=-60.00, z=86.82]]
+	Chunk stats: 2430
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,-60,0), Section: (at 0,4,0 in 0,-4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 90475 game time, 0 day time
+	Level name: Test World
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Known server brands: fabric
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 1
+Stacktrace:
+	at net.minecraft.server.world.ServerWorld.addDetailsToCrashReport(ServerWorld.java:1681)
+	at net.minecraft.server.MinecraftServer.tickWorlds(MinecraftServer.java:951)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:845)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:110)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:683)
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:270)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.4
+	Minecraft Version ID: 1.20.4
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 20.0.2, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 705902080 bytes (673 MiB) / 1470103552 bytes (1402 MiB) up to 4282384384 bytes (4084 MiB)
+	CPUs: 6
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+	Identifier: Intel64 Family 6 Model 158 Stepping 10
+	Microarchitecture: Coffee Lake
+	Frequency (GHz): 2.90
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 6
+	Graphics card #0 name: NVIDIA GeForce GTX 1660 SUPER
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x21c4
+	Graphics card #0 versionInfo: DriverVersion=31.0.15.5152
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 28105.39
+	Virtual memory used (MB): 16189.28
+	Swap memory total (MB): 11776.00
+	Swap memory used (MB): 184.23
+	JVM Flags: 0 total; 
+	Fabric Mods: 
+		fabric-api: Fabric API 0.91.1+1.20.4
+		fabric-api-base: Fabric API Base 0.4.34+f31bf88132
+		fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.44+9468a19d32
+		fabric-biome-api-v1: Fabric Biome API (v1) 13.0.14+9468a19d32
+		fabric-block-api-v1: Fabric Block API (v1) 1.0.13+73761d2e32
+		fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.2+73761d2e32
+		fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.44+f4b7e42432
+		fabric-client-tags-api-v1: Fabric Client Tags 1.1.5+86b1264532
+		fabric-command-api-v1: Fabric Command API (v1) 1.2.39+f71b366f32
+		fabric-command-api-v2: Fabric Command API (v2) 2.2.18+23e8616e32
+		fabric-commands-v0: Fabric Commands (v0) 0.2.56+df3654b332
+		fabric-containers-v0: Fabric Containers (v0) 0.1.80+df3654b332
+		fabric-content-registries-v0: Fabric Content Registries (v0) 5.0.8+9468a19d32
+		fabric-convention-tags-v1: Fabric Convention Tags 1.5.8+9468a19d32
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.21+f4b7e42432
+		fabric-data-generation-api-v1: Fabric Data Generation API (v1) 13.1.16+1b2a41bc32
+		fabric-dimensions-v1: Fabric Dimensions API (v1) 2.1.59+a2e8758a32
+		fabric-entity-events-v1: Fabric Entity Events (v1) 1.5.26+9468a19d32
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.6.13+9468a19d32
+		fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.70+df3654b332
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.44+6f7ba8f232
+		fabric-gametest-api-v1: Fabric Game Test API (v1) 1.2.18+9468a19d32
+		fabric-item-api-v1: Fabric Item API (v1) 2.1.33+9468a19d32
+		fabric-item-group-api-v1: Fabric Item Group API (v1) 4.0.19+f6e85ac232
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.39+f4b7e42432
+		fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.37+df3654b332
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.2.28+9468a19d32
+		fabric-loot-api-v2: Fabric Loot API (v2) 2.1.3+6f9f09e032
+		fabric-message-api-v1: Fabric Message API (v1) 6.0.3+ebb1549632
+		fabric-mining-level-api-v1: Fabric Mining Level API (v1) 2.1.58+f4b7e42432
+		fabric-model-loading-api-v1: Fabric Model Loading API (v1) 1.0.6+9468a19d32
+		fabric-models-v0: Fabric Models (v0) 0.4.5+9386d8a732
+		fabric-networking-api-v1: Fabric Networking API (v1) 3.1.1+901470e432
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 13.0.6+a2e8758a32
+		fabric-particles-v1: Fabric Particles (v1) 1.1.5+f4b7e42432
+		fabric-recipe-api-v1: Fabric Recipe API (v1) 2.0.14+23e8616e32
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 4.0.12+9468a19d32
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 3.2.2+2034447c32
+		fabric-renderer-indigo: Fabric Renderer - Indigo 1.5.2+2034447c32
+		fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.49+df3654b332
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.40+73761d2e32
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.0.31+f4b7e42432
+		fabric-rendering-v0: Fabric Rendering (v0) 1.1.52+df3654b332
+		fabric-rendering-v1: Fabric Rendering (v1) 3.0.11+9468a19d32
+		fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 2.3.12+de5c6cca32
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.11.14+f31bf88132
+		fabric-screen-api-v1: Fabric Screen API (v1) 2.0.15+f6e85ac232
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.49+9468a19d32
+		fabric-sound-api-v1: Fabric Sound API (v1) 1.0.15+f4b7e42432
+		fabric-transfer-api-v1: Fabric Transfer API (v1) 4.0.5+aaf9c96932
+		fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 5.0.12+1b2a41bc32
+		fabricloader: Fabric Loader 0.15.0
+		java: Java HotSpot(TM) 64-Bit Server VM 20
+		minecraft: Minecraft 1.20.4
+		mixinextras: MixinExtras 0.3.0
+		modid: Arrogant 0.2.3-Beta
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayerEntity['Player479'/1, l='ServerLevel[Test World]', x=-30.70, y=-60.00, z=86.82]]
+	Data Packs: vanilla, fabric
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fabric'; Server brand changed to 'fabric'
+	Launched Version: Fabric
