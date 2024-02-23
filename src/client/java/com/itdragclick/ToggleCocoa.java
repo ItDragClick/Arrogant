@@ -105,12 +105,12 @@ public class ToggleCocoa {
                                     e.printStackTrace();
                                 }
                             }
+                            client.options.leftKey.setPressed(false);
+                            client.options.sneakKey.setPressed(false);
                             if(!isDoneCocoa) {
-                                client.options.leftKey.setPressed(false);
-                                client.options.sneakKey.setPressed(false);
                                 client.options.rightKey.setPressed(true);
                                 client.options.backKey.setPressed(true);
-                                for (int i = 0; i < 200 && isRunningCocoa; i++) {
+                                for (int i = 0; i < 300 && isRunningCocoa; i++) {
                                     try {
                                         Thread.sleep(1);
                                     } catch (InterruptedException e) {
@@ -131,7 +131,7 @@ public class ToggleCocoa {
                         client.options.forwardKey.setPressed(false);
                         client.options.leftKey.setPressed(true);
                         client.options.backKey.setPressed(true);
-                        for (int i = 0; i < 750 && isRunningCocoa; i++) {
+                        for (int i = 0; i < 1000 && isRunningCocoa; i++) {
                             try {
                                 Thread.sleep(1);
                             } catch (InterruptedException e) {

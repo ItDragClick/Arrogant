@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Arrogant.client.iml" filepath="$PROJECT_DIR$/.idea/modules/Arrogant.client.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Arrogant.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Arrogant.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Arrogant.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Arrogant.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.itdragclick.Arrogant.client.iml" filepath="$PROJECT_DIR$/.idea/modules/com.itdragclick.Arrogant.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.itdragclick.Arrogant.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.itdragclick.Arrogant.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.itdragclick.Arrogant.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.itdragclick.Arrogant.test.iml" />
     </modules>
   </component>
 </project>
