@@ -6,23 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="861f7607-7f26-4f5f-9528-c7f4bdc4efdb" name="Changes" comment="Arrogant-0.8.1-beta&#10;- Add NetherWarts Farming&#10;- Add Melon Farming&#10;- Add CocoaBeans Farming">
       <changelist_data name="ItDragClick" email="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/loom-cache/launch.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/loom-cache/launch.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/devlibs/Arrogant-0.8.1-Beta-dev.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/devlibs/Arrogant-0.8.1-Beta-dev.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/Arrogant-0.8.1-Beta-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Arrogant-0.8.1-Beta-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/Arrogant-0.8.1-Beta.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Arrogant-0.8.1-Beta.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/java/com/itdragclick/ToggleCocoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/com/itdragclick/ToggleCocoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileClientJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileClientJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/com/itdragclick/ToggleMelon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/com/itdragclick/ToggleMelon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

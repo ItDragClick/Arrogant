@@ -74,7 +74,7 @@ public class ToggleMelon {
                             client.options.sprintKey.setPressed(false);
                             TurnSmoothTo(client, -90.0, 45);
                             client.options.forwardKey.setPressed(true);
-                            for (int i = 0; i < 550 && isRunningMelon; i++) {
+                            for (int i = 0; i < 750 && isRunningMelon; i++) {
                                 try {
                                     Thread.sleep(1);
                                 } catch (InterruptedException e) {
